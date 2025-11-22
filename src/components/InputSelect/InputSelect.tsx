@@ -1,18 +1,14 @@
-import "./InputSelect.scss";
-import { SlArrowDown } from "react-icons/sl";
 import { useState } from "react";
+import { SlArrowDown } from "react-icons/sl";
+import "./InputSelect.scss";
+const options = ["Cough", "Fever", "Headache", "Sore throat", "Fatigue"];
 
-const options = [
-    "Cough",
-    "Fever",
-    "Headache",
-    "Sore throat",
-    "Fatigue"
-];
+interface InputProps {
+    value: string;
+    onChange: (value: string) => void;
+}
 
-
-export const InputSelect = () => {
-    const [value, setValue] = useState("");
+export const InputSelect: React.FC<InputProps> = ({ value, onChange }) => {
     const [open, setOpen] = useState(false);
 
     return (
@@ -24,7 +20,7 @@ export const InputSelect = () => {
                 placeholder="Choose symptoms..."
                 onFocus={() => setOpen(true)}
                 onChange={(e) => {
-                    setValue(e.target.value);
+                    onChange(e.target.value);
                     setOpen(true);
                 }}
             />
@@ -41,7 +37,7 @@ export const InputSelect = () => {
                             <li
                                 key={item}
                                 onClick={() => {
-                                    setValue(item);
+                                    onChange(item);
                                     setOpen(false);
                                 }}
                             >
