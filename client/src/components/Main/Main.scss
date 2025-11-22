@@ -13,29 +13,57 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 12em;
+        height: 20em;
 
         &__input-container {
             position: relative;
-            width: 50%;
+            width: 30%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-around;
             align-items: center;
 
             &_input {
                 position: relative;
                 padding: 1em;
-                margin: 1em 0;
+                margin: 0 0;
                 width: inherit;
                 border: 1px solid var(--main-tuqoise);
                 border-radius: 8px;
             }
 
-            &_icon {
-                position: absolute;
-                right: 25%;
-                top: 35%;
+            &_button {
+                padding: 0.8em;
+                background-color: var(--main-tuqoise);
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+            }
+
+            &__symptoms-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: inherit;
+                min-height: 10em;
+                padding: 0.5em 0;
+
+                &__symptom-bubble {
+                    width: auto;
+                    height: 10%;
+                    padding: 0.5em 1em;
+                    margin: 0.5em 0.5em;
+                    background-color: #fff;
+                    color: var(--main-tuqoise);
+                    border: 1px solid var(--main-tuqoise);
+                    border-radius: 8px;
+
+                    &:hover {
+                        background-color: var(--main-tuqoise);
+                        color: #fff;
+                        opacity: 0.7;
+                    }
+                }
             }
         }
 

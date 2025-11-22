@@ -6,7 +6,7 @@ interface MyComponentProps {
   
 }
 
-const App: React.FC<MyComponentProps> = ({  }) => {
+const App: React.FC<MyComponentProps> = () => {
   return (
     <div>
       <Main/>
