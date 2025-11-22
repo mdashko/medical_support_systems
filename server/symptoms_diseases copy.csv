@@ -1,0 +1,140 @@
+disease,symptom1,symptom2,symptom3,symptom4,symptom5
+Stroke,Swallowing difficulties,Concentration problems,Thirst,Pain in the left arm,
+Sciatica,Localized swelling,Gradual loss of peripheral vision,Diffuse abdominal pain,Excessive daytime sleepiness,Red spots on the skin
+Eczema,Increased nervousness,Sleep disorders (insomnia),,,
+Epilepsy,Joint stiffness,,, ,
+Anorexia,Pain in the right side,Increased appetite,Abdominal enlargement,Unexplained bruising,Urination problems (frequent, difficult)
+Appendicitis,Loss of interest in activities,,, ,
+Urticaria,Migratory joint pain,Frequent painful urination,,,
+Eczema,Back pain,Hair loss,Thirst,Rapid breathing,
+Ulcerative colitis,Increased nervousness,Swollen tonsils,Weight loss,,
+Systemic lupus erythematosus,Sleep disorders,,, ,
+Cystitis,Muscle pain,,, ,
+Osteoporosis,Progressive limb weakness,Hyperactivity,Delayed speech development,Headache,
+Bronchitis,Sun sensitivity,Gradual loss of peripheral vision,,,
+Diabetes,Sensation of heaviness in the abdomen,Sleep disorders (insomnia),Hoarseness,Severe fever,
+Gallstone disease,Swallowing problems,Joint nodules,Sun sensitivity,Red spots on the skin,Diarrhea
+Laryngitis,Muscle pain,Localized redness,Loss of interest in activities,Severe joint pain,Dry eyes
+Glaucoma,Tinnitus,Jaundice,Fatigue,Impulsivity,
+COVID-19,Slowed movements,Progressive limb weakness,,,
+Anemia,Flashbacks,,, ,
+Chronic fatigue,Personality changes,Diarrhea,Lung wheezing,Sneezing,
+Lung cancer,Seizures,Disorientation,Severe joint pain,Rainbow halos around lights,
+Breast cancer,Sore throat,Changes in appetite/weight,,,
+Asthma,Sudden weakness in face/arm/leg,Concentration problems,Urination problems (frequent, difficult),,
+Stomach cancer,Change in nipple shape,,, ,
+Diabetes,Nipple discharge,,, ,
+Prostate cancer,Decrease in height over time,,, ,
+Urticaria,Jaundice,Intestinal bloating,,,
+Carpal tunnel syndrome,Sleep disorders (insomnia),Localized muscle pain,Anxiety/panic,Impulsivity,Swollen tonsils
+Osteoporosis,Tingling in limbs,Chest tightness,Back pain,Sensory disturbances,Lung wheezing
+Urticaria,Sudden weakness in face/arm/leg,Sensory disturbances,Blood in urine,Weight loss,
+Carpal tunnel syndrome,Fatigue,Severe joint pain,Rash,,
+Stomach ulcer,Pale skin,Excessive daytime sleepiness,Sleep disorders (insomnia),,
+ADHD,Hand tremor,Stereotypical movements,,,
+Depression,Thirst,,, ,
+Parkinson’s disease,Severe joint pain,Compulsive actions,Coordination problems,,
+Eczema,Nipple discharge,Poor night vision,, ,
+Arthritis,Flashbacks,Avoidance of traumatic memories,Body aches,,
+Rheumatoid arthritis,Skin itching,,, ,
+Melanoma,Feelings of guilt/worthlessness,Nail changes,Hunger pain,,
+Chronic fatigue,Severe muscle pain,,, ,
+Myocardial infarction,Visual field narrowing,Sharp weight loss,Lower back pain,Muscle weakness,
+Urolithiasis,Nervous loss of appetite,Hoarseness,Increased appetite,Muscle weakness,Double vision
+Cholecystitis,Tearing,,, ,
+Fibromyalgia,Chest pain (tight, burning),Anxiety,Heartburn,,
+Melanoma,Tinnitus,Sleep disorders,, ,
+Squamous cell carcinoma,Progressive vision deterioration,Back pain,, ,
+Chronic fatigue,Frequent urination,,, ,
+Arthritis,Increased appetite,,, ,
+Basal cell carcinoma,Enlarged liver/spleen,Intestinal bloating,Irritability,Urination problems (frequent, difficult),
+Stomach ulcer,Fast heartbeat,Eye itching,Sleep disorders (insomnia),Dry cough,Joint stiffness
+Multiple sclerosis,Blurred vision,Fear of gaining weight,Skin peeling,Headache,Unexplained weight loss
+Conjunctivitis,Bloating,Bleeding,,,
+Pyelonephritis,Red spots on skin,Speech problems,Dizziness,,
+Bulimia,Nervous loss of appetite,,, ,
+Chronic fatigue,Butterfly-shaped facial rash,Localized redness,Joint pain,Slow wound healing,Severe sore throat
+Arthritis,Belching,,, ,
+Stroke,Vomiting,Fear of gaining weight,Swallowing problems,Changes in appetite/weight,
+Fibromyalgia,Night sweats,,, ,
+COVID-19,Scratchy throat,,, ,
+Breast cancer,Chest tightness,,, ,
+Ulcerative colitis,Joint swelling,Dry eyes,, ,
+Carpal tunnel syndrome,Sneezing,Muscle pain,Ear pain,Dry eyes,
+Stomach ulcer,Changes in appetite/weight,Localized swelling,,,
+Melanoma,Tearing,Hoarseness,Avoidance of traumatic memories,Enlarged lymph nodes,Irritability
+Melanoma,Anxiety/panic,,, ,
+Multiple sclerosis,Decrease in height over time,Depressed mood,, ,
+Chronic fatigue,Blurred vision,,, ,
+Eczema,Hyperactivity,Change in nipple shape,Sun sensitivity,,
+Cataract,Ear pain,Nasal congestion,Anxiety,Bloating,
+Systemic lupus erythematosus,Tinnitus,Social interaction difficulties,, ,
+Trigeminal neuralgia,Social interaction difficulties,Anxiety,Sneezing,,
+Glaucoma,Fast heartbeat,,, ,
+Pancreatitis,Decrease in height over time,Bloating,, ,
+Asthma,Muscle rigidity,Double vision,,,
+Multiple sclerosis,Joint stiffness,Gradual loss of peripheral vision,Progressive vision deterioration,Joint nodules,Speech problems
+COVID-19,Limited mobility,Nasal congestion,Sleep disorders (insomnia),Belching,Muscle pain
+Bipolar disorder,Body image distortion,Progressive limb weakness,Manic episodes,Back pain,
+Colitis,Severe muscle pain,Heavy abdominal sensation,Seizures,Disorientation,Pain in the left arm
+Pharyngitis,Loss of taste/smell,Slouching,Heartburn,,
+Anxiety,Vision disorders,Increased appetite,Skin peeling,Double vision,Sun sensitivity
+Breast cancer,Bone pain,Blurred vision,Sun sensitivity,Localized redness,
+Asthma,Dry eyes,Tearing,Bloating,Rainbow halos around lights,
+Lung cancer,Fatigue,,, ,
+Crohn’s disease,Increased appetite,Cramping abdominal pain,Pain in the left arm,Sensory disturbances,
+COVID-19,Memory impairment,Diffuse abdominal pain,,,
+Anxiety,Vision disorders,Progressive limb weakness,Dry eyes,Skin plaques,Localized swelling
+Stomach cancer,Nail changes,Sudden weakness in face/arm/leg,,,
+Scleroderma,Nipple discharge,,, ,
+Scleroderma,Severe joint pain,Muscle rigidity,Loss of interest,Sensory disturbances,Scratchy throat
+Hypotension,Nasal congestion,,, ,
+Bipolar disorder,Disorientation,Binge-eating followed by purging,Slowed movements,Nasal congestion,Swallowing problems
+Trigeminal neuralgia,Various skin rashes,Ear discharge,, ,
+Epilepsy,Hoarseness,Localized redness,Seizures,Sneezing,
+Alzheimer’s disease,Memory impairment,Night sweats,Diarrhea,Morning headache,Chest pain (tight, burning)
+Encephalitis,Sore throat,,, ,
+COVID-19,Sweating,Concentration problems,Tremor,Frequent painful urination,Cough
+Encephalitis,Coordination disorders,Seizures,Sleep disorders (insomnia),,
+Scleroderma,Sweating,Localized movement restriction,Unexplained weight loss,,
+PTSD,Depressed mood,,, ,
+PTSD,Fatigue,,, ,
+Stomach cancer,Progressive vision deterioration,,, ,
+Pyelonephritis,Butterfly rash,Sneezing,Tremor,Anxiety,Avoidance of traumatic memories
+Myocardial infarction,Swollen tonsils,Shortness of breath,Bone pain,Localized swelling,
+Insomnia,Jaundice,White coating on tonsils,Decrease in height over time,,
+Anorexia,Mood swings,Pain in the left arm,,,
+Colitis,Sun sensitivity,Joint stiffness,Obsessive thoughts,Shortness of breath,Swallowing problems
+Stomach ulcer,Diarrhea,,, ,
+Melanoma,Sensitivity to bright light,Stereotypical movements,Tremor,Butterfly rash,
+Leukemia,Dry cough,,, ,
+Pyelonephritis,Confusion,,, ,
+Colitis,Pain in right side,,, ,
+Depression,Unexplained weight loss,Raynaud’s syndrome,, ,
+Pharyngitis,Dry mouth,Urination problems (frequent, difficult),Unexplained weight loss,Swelling,Intestinal bloating
+Appendicitis,Sudden weakness in face/arm/leg,Diarrhea,Headache,Jaundice,Double vision
+Hypertension,Nipple discharge,Sneezing,Nervousness,Blurred vision,Fever
+Depression,Changes in appetite/weight,Fainting,,,
+Prostate cancer,Ear pain,Body image distortion,Wheezing,,
+Squamous cell carcinoma,Lower back pain,Purulent tearing,Seizures,Skin itching,
+Breast cancer,Skin thickening,Numbness of limbs,Skin plaques,Belching,Severe fever
+Obsessive-compulsive disorder,Pale skin,,, ,
+PTSD,Muscle pain,,, ,
+Lung cancer,Fever,,, ,
+Ulcerative colitis,Binge-eating followed by purging,,, ,
+Arthritis,Personality changes,Skin itching,, ,
+Alzheimer’s disease,Morning vomiting,Vomiting,Localized swelling,,
+Stomach cancer,Hand tremor,Severe pulsating headache,Enlarged thyroid,Severe muscle pain,
+Trigeminal neuralgia,Chest tightness,Nausea,Localized movement restriction,,
+Rheumatoid arthritis,Decrease in height over time,Change in nipple shape,Enlarged lymph nodes,Binge-eating followed by purging,Nasal congestion
+Migraine,Ear discharge,Social interaction difficulties,Sudden weakness in face/arm/leg,,
+Pancreatitis,Localized movement restriction,Cramping abdominal pain,Pain in right upper abdomen,,
+Cataract,Localized movement restriction,Social interaction difficulties,Pain while swallowing,Breast lump,Manic episodes
+Psoriasis,Urination problems (frequent, difficult),Coordination problems,, ,
+Common cold,Progressive limb weakness,,, ,
+Depression,Disorientation,,, ,
+Insomnia,Body image distortion,Blood in urine,, ,
+Gastroenteritis,Wheezing,Morning vomiting,,,
+Bulimia,Limited mobility,,, ,
+Systemic lupus erythematosus,Dry mouth,Scratchy throat,Productive cough,Diarrhea,
+Colon cancer,Blood in stool,,,,
