@@ -1,0 +1,65 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &__setup-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12em;
+
+        &__input-container {
+            position: relative;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &_input {
+                position: relative;
+                padding: 1em;
+                margin: 1em 0;
+                width: inherit;
+                border: 1px solid var(--main-tuqoise);
+                border-radius: 8px;
+            }
+
+            &_icon {
+                position: absolute;
+                right: 25%;
+                top: 35%;
+            }
+        }
+
+        &__button {
+            padding: 0.5em 1em;
+            margin: 1em 0;
+            background-color: var(--main-tuqoise);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+        }
+    }
+
+    &__result-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 22em;
+
+        &__result-textarea {
+            width: 90%;
+            height: 90%;
+        }
+
+    }
+}
