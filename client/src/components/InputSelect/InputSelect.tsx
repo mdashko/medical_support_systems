@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import "./InputSelect.scss";
-const options = ["Cough", "Fever", "Headache", "Sore throat", "Fatigue"];
 
 interface InputProps {
     value: string;
+    illnesses: string[];
     onChange: (value: string) => void;
 }
 
-export const InputSelect: React.FC<InputProps> = ({ value, onChange }) => {
+export const InputSelect: React.FC<InputProps> = ({ value, illnesses, onChange }) => {
     const [open, setOpen] = useState(false);
+   
 
     return (
         <div className="input-select-container">
@@ -29,7 +30,7 @@ export const InputSelect: React.FC<InputProps> = ({ value, onChange }) => {
 
             {open && (
                 <ul className="input-select-container_dropdown">
-                    {options
+                    {illnesses
                         .filter((item) =>
                             item.toLowerCase().includes(value.toLowerCase())
                         )

@@ -14,7 +14,7 @@ app.add_middleware(
 )
 
 # Path to your CSV file
-CSV_FILE = "diseases.csv"
+CSV_FILE = "symptomdiseases.csv"
 
 # Load disease names once on startup
 def load_diseases():
