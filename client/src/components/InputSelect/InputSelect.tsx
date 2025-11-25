@@ -4,11 +4,11 @@ import "./InputSelect.scss";
 
 interface InputProps {
     value: string;
-    illnesses: string[];
+    symptoms: string[];
     onChange: (value: string) => void;
 }
 
-export const InputSelect: React.FC<InputProps> = ({ value, illnesses, onChange }) => {
+export const InputSelect: React.FC<InputProps> = ({ value, symptoms, onChange }) => {
     const [open, setOpen] = useState(false);
    
 
@@ -30,7 +30,7 @@ export const InputSelect: React.FC<InputProps> = ({ value, illnesses, onChange }
 
             {open && (
                 <ul className="input-select-container_dropdown">
-                    {illnesses
+                    {symptoms
                         .filter((item) =>
                             item.toLowerCase().includes(value.toLowerCase())
                         )

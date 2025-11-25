@@ -1,10 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import csv
+from pydantic import BaseModel
+from typing import List
 
-app = FastAPI(title="Illness List API")
+CSV_FILE = "symptoms_diseases.csv"
 
-# Allow all origins (for frontend requests)
+app = FastAPI(title="Symptoms API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -13,25 +15,48 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Path to your CSV file
-CSV_FILE = "symptomdiseases.csv"
+# Модель для прийому симптомів
+class SymptomsRequest(BaseModel):
+    symptoms: List[str]
 
-# Load disease names once on startup
-def load_diseases():
-    diseases = set()
+def load_unique_symptoms():
+    symptoms_set = set()
+
     with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
         reader = csv.DictReader(csvfile)
+
         for row in reader:
-            disease_name = row.get("disease") or row.get("хвороба")
-            if disease_name:
-                diseases.add(disease_name.strip())
-    return sorted(list(diseases))
+            for key in ["симптом1", "симптом2", "симптом3", "симптом4", "симптом5"]:
+                value = row.get(key)
+                if value and value.strip():
+                    symptoms_set.add(value.strip())
 
-DISEASE_LIST = load_diseases()
+    return sorted(list(symptoms_set))
 
-@app.get("/illnesses")
-def get_illnesses():
+
+SYMPTOMS_LIST = load_unique_symptoms()
+
+
+@app.get("/symptoms")
+def get_symptoms():
     """
-    Returns a JSON list of all unique illness names from the CSV.
+    Returns a JSON list of all unique symptoms.
     """
-    return {"illnesses": DISEASE_LIST}
+    return {"symptoms": SYMPTOMS_LIST}
+
+@app.post("/process-symptoms")
+def process_symptoms(data: SymptomsRequest):
+    selected = data.symptoms
+	
+
+    # --- тут ти можеш передати симптоми у будь-який метод ---
+    # Приклади:
+    # result = find_diseases_by_symptoms(selected)
+    # result = run_association_model(selected)
+    # result = predict_disease(selected)
+    # ---------------------------------------------------------
+
+    return {
+        "received_symptoms": selected,
+        "message": "Symptoms successfully processed"
+    }
