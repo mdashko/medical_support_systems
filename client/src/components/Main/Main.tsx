@@ -6,10 +6,15 @@ import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "../../state-managment/store";
 import { addSymptom, removeSymptom } from "../../state-managment/actions";
 import { RootState } from "../../state-managment/store";
-import { fetchListOfSymptoms, sendListOfSymptoms } from "../../services/systemService";
+import {
+	fetchListOfSymptoms,
+	sendListOfSymptoms,
+} from "../../services/systemService";
+import { RulesTable } from "../ResultTable/ResultTable";
 
 const Main: React.FC = () => {
 	const [symptomValue, setSymptomValue] = useState("");
+	const [result, setResult] = useState<any>(null);
 	const [listOfSymptoms, setListOfSymptoms] = useState<string[]>([]);
 	const [loading, setLoading] = useState(true);
 	const dispatch = useDispatch<AppDispatch>();
@@ -45,9 +50,13 @@ const Main: React.FC = () => {
 		dispatch(removeSymptom(symptom));
 	};
 
-	const startAnalysis = () => {
-		sendListOfSymptoms(symptoms);
+	const startAnalysis = async () => {
+		const data = await sendListOfSymptoms(symptoms);
+		console.log(data);
+		setResult(data);
 	};
+
+
 
 	function renderIllnessInput() {
 		switch (loading) {
@@ -82,17 +91,16 @@ const Main: React.FC = () => {
 									</div>
 								))}
 							</div>
-							<button className="main-content__setup-section__button" onClick={startAnalysis}>
+							<button
+								className="main-content__setup-section__button"
+								onClick={startAnalysis}
+							>
 								Start Analysis
 							</button>
 						</section>
 
 						<section className="main-content__result-section">
-							<textarea
-								name=""
-								id=""
-								className="main-content__result-section__result-textarea"
-							></textarea>
+							<RulesTable rules={result}></RulesTable>
 						</section>
 					</div>
 				);
@@ -108,7 +116,7 @@ const Main: React.FC = () => {
 				<header></header>
 				{renderIllnessInput()}
 
-				<footer className=""></footer>
+				{/* <footer className=""></footer> */}
 			</div>
 		</Container>
 	);

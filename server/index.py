@@ -3,38 +3,25 @@ from fastapi.middleware.cors import CORSMiddleware
 import csv
 from pydantic import BaseModel
 from typing import List
-
-CSV_FILE = "symptoms_diseases.csv"
+from settings import CSV_FILE, MIN_SUPPORT, MIN_CONFIDENCE
+from load_symptoms import load_symptoms
+from load_transactions import load_transactions
+from combine_rules import combine_all_rules
 
 app = FastAPI(title="Symptoms API")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],   # дозволити всім
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Модель для прийому симптомів
 class SymptomsRequest(BaseModel):
     symptoms: List[str]
 
-def load_unique_symptoms():
-    symptoms_set = set()
 
-    with open(CSV_FILE, newline="", encoding="utf-8") as csvfile:
-        reader = csv.DictReader(csvfile)
-
-        for row in reader:
-            for key in ["симптом1", "симптом2", "симптом3", "симптом4", "симптом5"]:
-                value = row.get(key)
-                if value and value.strip():
-                    symptoms_set.add(value.strip())
-
-    return sorted(list(symptoms_set))
-
-
-SYMPTOMS_LIST = load_unique_symptoms()
+SYMPTOMS_LIST = load_symptoms()
 
 
 @app.get("/symptoms")
@@ -46,17 +33,21 @@ def get_symptoms():
 
 @app.post("/process-symptoms")
 def process_symptoms(data: SymptomsRequest):
-    selected = data.symptoms
-	
+    selected = [s.strip() for s in data.symptoms]
+    
+    ALL_TRANSACTIONS = load_transactions()
 
-    # --- тут ти можеш передати симптоми у будь-який метод ---
-    # Приклади:
-    # result = find_diseases_by_symptoms(selected)
-    # result = run_association_model(selected)
-    # result = predict_disease(selected)
-    # ---------------------------------------------------------
+    # 1) Фільтруємо рядки з CSV
+    matching = []
+    for row in ALL_TRANSACTIONS:
+        row_symptoms = [s.strip() for s in row[1:] if s.strip()]
+        if sum(1 for s in selected if s in row_symptoms) >= 2:
+            matching.append([row[0], *row_symptoms])
 
-    return {
-        "received_symptoms": selected,
-        "message": "Symptoms successfully processed"
-    }
+    results = combine_all_rules(matching, selected)
+    return results
+    
+    
+
+
+

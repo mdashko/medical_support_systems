@@ -32,3 +32,4 @@ yarn-error.log*
 
 # cache
 /server/__pycache__
+/server/methods/__pycache__

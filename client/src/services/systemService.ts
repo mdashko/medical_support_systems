@@ -12,15 +12,20 @@ export async function fetchListOfSymptoms() {
 }
 
 export async function sendListOfSymptoms(symptoms: string[]) {
-	fetch(`${API_URL}/process-symptoms`, {
-		method: "POST",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body: JSON.stringify({
-			symptoms: symptoms
-		}),
-	})
-		.then((res) => res.json())
-		.then((data) => console.log(data));
+	try {
+		const res = await fetch(`${API_URL}/process-symptoms`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({ symptoms }),
+		});
+
+		const data = await res.json();
+		return data; 
+	} catch (err) {
+		console.error("FETCH ERROR:", err);
+	}
 }
+
+
